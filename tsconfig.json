@@ -1,23 +1,21 @@
 {
-    "compilerOptions": {
-      /* Basic Options */
-      "lib": ["ES2015"],
-      "module": "commonjs",
-      "outDir": "dist",
-      "sourceMap": true,
-      "target": "es2015",
-  
-      /* Strict Type-Checking Options  */
-      "noImplicitAny": true,
-      "strict": true,
-  
-      /* Module Resolution Options */
-      "esModuleInterop": true,
-      "moduleResolution": "node",
-      "resolveJsonModule": true,
-  
-      /* Advanced Options */
-      "forceConsistentCasingInFileNames": true
-    },
-    "exclude": ["**/*.spec*", "**/*.test*", "__tests__", "dist", "lib", "node_modules"]
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["es6"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "outDir": "dist",
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": false,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es6"
+  },
+  "exclude": ["dist", "lib", "node_modules", "templates"],
+  "ts-node": {
+    "files": true
+  }
 }
