@@ -5,7 +5,7 @@ import path from "path";
 import prompts, { PromptObject, PromptType } from "prompts";
 import updateCheck from "update-check";
 
-import packageJson from "../package.json";
+import packageJson from "../create-aptos-app/package.json";
 import { createAptosApp } from "./createAptosApp";
 import { shouldUseYarn } from "./helpers/shouldUseYarn";
 import { validateNpmName } from "./helpers/validatePkg";
