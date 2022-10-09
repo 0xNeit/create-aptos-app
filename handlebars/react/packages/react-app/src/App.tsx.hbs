@@ -1,0 +1,32 @@
+import { WalletConnect } from "./components/WalletConnect"
+import React from "react";
+
+import { Body, Button, Container, Header, Image, Link } from "./components";
+import logo from "./AptosLogo.png";
+
+{{#each imports}}
+{{{ this }}}
+{{/each}}
+
+const App: React.FC = () =>{
+
+  return (
+    <Container>
+      <Header>
+        <WalletConnect />
+      </Header>
+      <Body>
+        <Image src={logo} alt="aptos-logo" />
+        <p>
+          Edit <code>packages/react-app/src/App.js</code> and save to reload.
+        </p>
+        <Link href="https://reactjs.org">
+          Learn React
+        </Link>
+        <Link href="{{ learn.url }}">Learn {{ learn.name }}</Link>
+      </Body>
+    </Container>
+  );
+}
+
+export default App;
