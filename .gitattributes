@@ -1,1 +1,1 @@
-*.move diff linguist-language=Move
+*.sol diff linguist-language=Solidity

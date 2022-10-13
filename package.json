@@ -1,15 +1,19 @@
 {
-  "name": "create-aptos-app",
-  "description": "Create Aptos-powered React apps with one command",
-  "version": "1.0.0",
+  "name": "create-eth-app",
+  "description": "Create Ethereum-powered apps with one command",
+  "version": "1.8.2",
   "bin": "./dist/index.js",
   "bugs": {
-    "url": "https://github.com/natedotv2/create-aptos-app/issues"
+    "url": "https://github.com/paulrberg/create-eth-app/issues"
   },
   "contributors": [
     {
-      "name": "NateV2",
-      "url": "https://github.com/natedotv2"
+      "name": "Paul Razvan Berg",
+      "url": "https://github.com/paulrberg"
+    },
+    {
+      "name": "Tom French",
+      "url": "https://github.com/tomafrench"
     }
   ],
   "dependencies": {
@@ -68,10 +72,10 @@
     "/dist",
     "CHANGELOG.md"
   ],
-  "homepage": "https://github.com/natedotv2/create-aptos-appp#readme",
+  "homepage": "https://github.com/paulrberg/create-eth-app#readme",
   "keywords": [
-    "aptos",
-    "move",
+    "ethers",
+    "ethereum",
     "react",
     "vue",
     "web3",
@@ -81,9 +85,9 @@
   "main": "./dist/index.js",
   "packageManager": "yarn@3.2.0",
   "repository": {
-    "name": "natedotv2/create-aptos-app",
+    "name": "paulrberg/create-eth-app",
     "type": "git",
-    "url": "https://github.com/natedotv2/create-aptos-app"
+    "url": "https://github.com/paulrberg/create-eth-app"
   },
   "scripts": {
     "build": "ncc build ./src/index.ts --out dist/ && yarn copy-files",
@@ -94,8 +98,8 @@
     "postinstall": "husky install",
     "postpublish": "pinst --enable",
     "prepublishOnly": "pinst --disable",
-    "prettier": "prettier --config .prettierrc.yaml --write \"**/*.{js,jsx,json,md,ts,tsx,yaml,yml}\"",
-    "prettier:check": "prettier --check --config .prettierrc.yaml \"**/*.{js,json,jsx,md,ts,tsx,yaml,yml}\"",
+    "prettier": "prettier --config .prettierrc.yaml --write \"**/*.{js,jsx,json,md,sol,ts,tsx,yaml,yml}\"",
+    "prettier:check": "prettier --check --config .prettierrc.yaml \"**/*.{js,json,jsx,md,sol,ts,tsx,yaml,yml}\"",
     "test": "yarn run test:unit && yarn run test:integration",
     "test:integration": "jest test/integration",
     "test:unit": "jest test/unit",
